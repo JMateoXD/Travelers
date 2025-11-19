@@ -1,0 +1,169 @@
+.all2 {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+    background-size: cover;        /* Ajusta la imagen al tamaño de la pantalla */
+    background-position: center;   /* Centra la imagen */
+    background-repeat: no-repeat;  /* Evita que se repita */
+    color: #333;
+    margin-top: 80px;
+    
+}
+
+/* VIÑETA */
+.all2::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;   /* IMPORTANTE: detrás de todo */
+    background: radial-gradient(
+        circle,
+        rgba(0,0,0,0) 60%,
+        rgba(0,0,0,0.7) 120%
+    );
+}
+
+/* ---------------------------- */
+/* HEADER IGUAL QUE LA OTRA PAG */
+/* ---------------------------- */
+header {
+    background: rgb(230, 230, 230);
+    color: black;
+    padding: 5px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+}
+
+/* Logo + título alineados */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header img {
+    width: 60px;  /* más estético */
+    height: auto;
+}
+
+/* ---------------------------- */
+/* SECCIONES                    */
+/* ---------------------------- */
+.section {
+    padding: 40px 30px;
+    text-align: center;
+    
+}
+
+.section h2 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    color: #111;
+}
+.paqtes{
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    color: #111;
+}
+
+/* ---------------------------- */
+/* CARDS                        */
+/* ---------------------------- */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.card:hover {
+    transform: scale(1.04);
+    background-color: white;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.22);
+    opacity: 100%;
+}
+
+.card img {
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+button{
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+/* Botón 2 */
+.pacage {
+    background: rgba(0,0,0,0.7);
+    color: white;
+    margin-left: 600px;
+}
+.pacage:hover {
+    background: rgba(0,0,0,1);
+    transform: scale(1.1);
+}
+
+/* Botón 3 */
+.contacto {
+    background: rgba(0,0,0,0.7);
+    color: white;
+    margin-right: -200px;
+}
+.contacto:hover {
+    background: rgba(0,0,0,1);
+    transform: scale(1.1);
+}
+.sectionf{
+    background: rgb(230, 230, 230);
+    color: black;
+    text-align: center;
+    padding: 15px;
+    margin-top: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    box-shadow: 0 -10px 20px rgba(0,0,0,0.25);
+}
+footer{
+    background-color: black;
+    color: white;
+}
+.bandera {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;     /* centra verticalmente */
+    justify-content: center; /* mantiene todo centrado */          /* espacio entre texto e imagen */
+    margin-bottom: 20px;
+}
+.bandera img{
+    width: 40px;             /* ajusta tamaño */
+    height: auto;
+    margin-top: 30px;
+}
